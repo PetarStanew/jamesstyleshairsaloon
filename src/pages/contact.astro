@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact | James Styles Hair Salon">
+  <div class="min-h-screen">
+    <header class="sticky top-0 z-50 backdrop-blur bg-cream-50/80 dark:bg-olive-900/70 border-b border-cream-200 dark:border-olive-800">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <div class="h-11 w-11 rounded-full bg-terracotta-500 flex items-center justify-center text-cream-50 font-display text-xl">JS</div>
+          <div>
+            <p class="font-display text-lg">James Styles</p>
+            <p class="text-xs uppercase tracking-[0.3em] text-olive-600 dark:text-cream-200">Hair Salon</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="/" class="hover:text-terracotta-600">Home</a>
+          <a href="/about" class="hover:text-terracotta-600">About</a>
+          <a href="/services" class="hover:text-terracotta-600">Services</a>
+          <a href="/contact" class="hover:text-terracotta-600">Contact</a>
+        </nav>
+        <button
+          type="button"
+          data-theme-toggle
+          class="flex items-center gap-2 rounded-full border border-olive-200 dark:border-olive-700 px-4 py-2 text-xs uppercase tracking-[0.2em]"
+        >
+          Toggle
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-glow pt-24 pb-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <p class="text-sm uppercase tracking-[0.3em] text-olive-600 dark:text-cream-200">Contact</p>
+          <h1 class="mt-3 text-4xl md:text-5xl font-display">Let us plan your next visit</h1>
+          <p class="mt-5 text-olive-700 dark:text-cream-200 max-w-3xl">
+            Tell us about your hair goals and preferred timing. We will follow up quickly to confirm the details
+            and prepare your personalized service plan.
+          </p>
+        </div>
+      </section>
+
+      <section class="pb-20">
+        <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-12">
+          <form class="grid gap-4">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Full name"
+                class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone"
+                class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+            />
+            <input
+              type="text"
+              name="service"
+              placeholder="Desired service"
+              class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+            />
+            <input
+              type="text"
+              name="datetime"
+              placeholder="Preferred date and time"
+              class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+            />
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us about your hair goals"
+              class="w-full rounded-2xl border border-cream-200 dark:border-olive-700 bg-cream-50/80 dark:bg-olive-900/70 px-4 py-3"
+            ></textarea>
+            <button
+              type="submit"
+              class="bg-terracotta-500 hover:bg-terracotta-600 text-cream-50 px-6 py-3 rounded-full font-medium"
+            >
+              Request Appointment
+            </button>
+          </form>
+
+          <div class="space-y-6">
+            <div class="bg-cream-50/80 dark:bg-olive-900/70 border border-cream-200 dark:border-olive-700 rounded-2xl p-6">
+              <h2 class="font-display text-2xl">Visit or reach us</h2>
+              <p class="mt-3 text-olive-700 dark:text-cream-200">
+                8631 Coral Way Suite 128<br />
+                Miami, FL 33155
+              </p>
+              <p class="mt-4 text-olive-700 dark:text-cream-200">
+                Call or text: <a href="tel:+13055881645" class="underline">(305) 588-1645</a>
+              </p>
+              <p class="mt-2 text-olive-700 dark:text-cream-200">
+                WhatsApp: <a href="https://api.whatsapp.com/send?phone=13055881645" class="underline">Chat now</a>
+              </p>
+              <p class="mt-4 text-sm text-olive-600 dark:text-cream-200">
+                Hours: Tue-Sat 10:00 AM - 7:00 PM (placeholder)
+              </p>
+            </div>
+            <div class="bg-cream-50/80 dark:bg-olive-900/70 border border-cream-200 dark:border-olive-700 rounded-2xl overflow-hidden">
+              <iframe
+                title="James Styles Hair Salon map"
+                src="https://www.google.com/maps?q=8631%20Coral%20Way%20Suite%20128%2C%20Miami%2C%20FL%2033155&output=embed"
+                class="w-full h-[280px]"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-cream-200 dark:border-olive-800 py-10">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <p class="text-sm text-olive-600 dark:text-cream-200">
+          James Styles Hair Salon. Miami, Florida. Warm organic hair care with a global touch.
+        </p>
+        <div class="flex gap-4 text-sm">
+          <a href="https://www.facebook.com/jamesstylesmiami/" class="hover:text-terracotta-600">Facebook</a>
+          <a href="https://www.instagram.com/jamesstylesmiami/" class="hover:text-terracotta-600">Instagram</a>
+          <a href="https://www.yelp.com/biz/james-styles-miami" class="hover:text-terracotta-600">Yelp</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
