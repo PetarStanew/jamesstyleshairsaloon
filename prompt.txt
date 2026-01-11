@@ -1,4 +1,4 @@
-Create a website prompt with the following configuration:
+Image you are a software developer and you have to create a professional website with the below requirements:
 Business type: Hair salon or barber shop.
 Theme + palette: Warm organic (terracotta, olive, cream).
 Technology stack: Astro + Tailwind + javascript (clean, fast, static).
@@ -7,33 +7,13 @@ SEO optimization: No, skip SEO optimization.
 Google Maps integration: Yes, include Google Maps integration.
 Existing website URL: https://app.landingsite.ai/website-preview?id=e5eef285-8cb6-4735-b5d0-5bb274a7de19. Use this site's content, messaging, and brand details as reference.
 Google Maps URL: https://maps.app.goo.gl/MoLXYqJ2MdDRSuyr8. Use this to infer location details, reviews, and business info.
-
-Brand reference notes (use this content and messaging):
-- Business name: James Styles Hair Salon.
-- Location: 8631 Coral Way Suite 128, Miami, FL 33155.
-- Contact: Call or text +1 (305) 588-1645. Include WhatsApp as a contact option.
-- Social profiles: Facebook https://www.facebook.com/jamesstylesmiami/, Instagram https://www.instagram.com/jamesstylesmiami/, Yelp https://www.yelp.com/biz/james-styles-miami/.
-- Brand voice: Warm, welcoming, premium-but-approachable. Highlight a personalized, detail-oriented experience.
-- About James: 15+ years in the beauty industry, 10+ years owning the salon. Specializes in balayage color, precision cutting, keratin treatments, and organic botox with a focus on healthy, lived-in hair. Trained and certified in Milan (Italy), San Jose (Costa Rica), Rio de Janeiro (Brazil), Medellin (Colombia), and Panama. Has worked with well-known beauty brands.
-- Reviews: Emphasize a 5-star reputation and 462 Google reviews. Include a short testimonials slider with real-sounding quotes about highlights, keratin, color, and overall service quality.
-- Bilingual service: Provide English and Spanish copy accents where appropriate (headings or small snippets) without clutter.
-
-- In the header there should be a logo of the business and a navigation menu with links to Home, About, Services, and Contact pages.
-- In the main section, there should be a hero image with a catchy headline and a call-to-action button.
-- There should be a section showcasing the business's services or products with images and descriptions.
-- There should be an About Us section with information about the business and its team.
-- There should be a Contact Us section with a contact form and the business's contact information.
-- If Google Maps integration is selected, include a map showing the business's location.
-- If SEO optimization is selected, ensure that the website follows best practices for search engine optimization,
+In the header there should be a logo of the business and a navigation menu with links to Home, About, Services, and Contact pages.
+In the main section, there should be a hero image with a catchy headline and a call-to-action button.
+There should be a section showcasing the business's services or products with images and descriptions.
+There should be an About Us section with information about the business and its team.
+There should be a Contact Us section with a contact form and the business's contact information.
+If SEO optimization is selected, ensure that the website follows best practices for search engine optimization,
     including meta tags, alt text for images, and a sitemap.
 In the footer, there should be links to the business's social media profiles and any other relevant information.
-
-Content direction and structure details:
-- Hero headline idea: "Custom color, healthy hair, and signature cuts in Miami" with a subheadline about personalized service and years of expertise. CTA: "Book Your Appointment" and secondary CTA "Call or Text".
-- Services to highlight (with brief 1-2 sentence descriptions):
-  Shampoo, cut, and blow dry; root color touch-up; womens haircut; shampoo and blowdry; full highlights; mens shampoo and cut; single application color; partial highlights; balayage/ombre; shampoo, cut and style for women; double dimension color (full highlights); double dimension (partial highlights); kids cut (8 and under); hair plastic surgery treatment; keratin + collagen; deep restructuring treatment; organic keratin for medium to coarse hair.
-- About section: Include James as the lead stylist/owner, his training and certifications, and a short note about the salon team or assistants supporting the experience.
-- Reviews section: Add a Google reviews summary card and 4-6 featured testimonials.
-- Contact section: Include address, phone/text number, and a simple booking form (name, phone, email, service, preferred date/time, message). Include business hours placeholder if not available.
-- Map: Embed Google Maps with the location pinned to 8631 Coral Way Suite 128, Miami, FL 33155.
-- Styling: Use warm organic colors (terracotta, olive, cream), tactile textures, and soft gradients. Use elegant serif for headings and clean sans for body. Make sure light/dark mode works with accessible contrast.
+The website will be hosted and deployed on Railway.com
+Put all the files into /home/petar/jamesstyleshairsaloon/jamesstyleshairsaloon
