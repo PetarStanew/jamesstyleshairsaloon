@@ -23,23 +23,23 @@ const serviceHighlights = [
 ];
 
 const fullMenu = [
-  "Shampoo, cut, and blow dry",
-  "Root color touch-up",
-  "Womens haircut",
-  "Shampoo and blowdry",
-  "Full highlights",
-  "Mens shampoo and cut",
-  "Single application color",
-  "Partial highlights",
-  "Balayage and ombre",
-  "Shampoo, cut, and style for women",
-  "Double dimension color with full highlights",
-  "Double dimension with partial highlights",
-  "Kids cut (8 and under)",
-  "Hair plastic surgery treatment",
-  "Keratin + collagen",
-  "Deep restructuring treatment",
-  "Organic keratin for medium to coarse hair"
+  { name: "Shampoo, cut, and blow dry", price: "$75", duration: "1 hr" },
+  { name: "Root color touch-up", price: "$110", duration: "1.5 hr" },
+  { name: "Womens haircut", price: "$70", duration: "1 hr" },
+  { name: "Shampoo and blowdry", price: "$55", duration: "45 min" },
+  { name: "Full highlights", price: "$180", duration: "2.5 hr" },
+  { name: "Mens shampoo and cut", price: "$45", duration: "45 min" },
+  { name: "Single application color", price: "$120", duration: "1.5 hr" },
+  { name: "Partial highlights", price: "$140", duration: "2 hr" },
+  { name: "Balayage and ombre", price: "$220", duration: "3 hr" },
+  { name: "Shampoo, cut, and style for women", price: "$95", duration: "1.25 hr" },
+  { name: "Double dimension color with full highlights", price: "$260", duration: "3.5 hr" },
+  { name: "Double dimension with partial highlights", price: "$210", duration: "3 hr" },
+  { name: "Kids cut (8 and under)", price: "$35", duration: "30 min" },
+  { name: "Hair plastic surgery treatment", price: "$160", duration: "2 hr" },
+  { name: "Keratin + collagen", price: "$240", duration: "2.5 hr" },
+  { name: "Deep restructuring treatment", price: "$140", duration: "1.5 hr" },
+  { name: "Organic keratin for medium to coarse hair", price: "$260", duration: "2.5 hr" }
 ];
 ---
 
@@ -101,12 +101,21 @@ const fullMenu = [
           <h2 class="text-2xl md:text-3xl font-display">Full service menu</h2>
           <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm text-olive-700 dark:text-cream-200">
             {fullMenu.map((item) => (
-              <div class="flex items-center gap-3">
-                <span class="h-2 w-2 rounded-full bg-terracotta-500"></span>
-                <span>{item}</span>
+              <div class="flex items-center justify-between gap-3 border border-cream-200 dark:border-olive-700 rounded-2xl px-4 py-3 bg-cream-50/80 dark:bg-olive-900/70">
+                <div class="flex items-center gap-3">
+                  <span class="h-2 w-2 rounded-full bg-terracotta-500"></span>
+                  <span>{item.name}</span>
+                </div>
+                <div class="text-right">
+                  <p class="font-semibold">{item.price}</p>
+                  <p class="text-xs text-olive-600 dark:text-cream-200">{item.duration}</p>
+                </div>
               </div>
             ))}
           </div>
+          <p class="mt-4 text-xs text-olive-600 dark:text-cream-200">
+            Pricing reflects starting rates and may vary by hair length, density, and desired result.
+          </p>
           <div class="mt-8">
             <a
               href="/contact"
